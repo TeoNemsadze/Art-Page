@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="felina.css">
+    <title>art</title>
+</head>
+<style>
+	.logo{
+		margin-left: 120px;
+	}
+</style>
+
+<body>
+	<header>
+		<div class="container">
+			<a href="full.html"><img class="logo" src="images/33.png" width="100px"></a>
+            <div class="d-flex">
+            	<nav class="navbar">
+            		<ul>
+            			<li class="navbar-li">
+            				<a href="full.html">home</a>
+            			</li>
+            			<li class="navbar-li">
+            				<a href="about.html">About</a>
+            			</li>
+            			<li class="navbar-li">
+            				<a href="blog.html">Blog</a>
+            			</li>
+            			<li class="navbar-li">
+            				<a href="1uiz.html">Quiz</a>
+            			</li>
+            		</ul>
+            	</nav>
+	</header>
+	<video autoplay muted loop id="myVideo">  
+		<source src="images/pirosmani1.mp4">
+	</video>
+	<div class="content">
+		<h1>Niko Pirosmani</h1>
+		<p>Niko Pirosmani  simply referred to as Nikala  (1862–1918), was a Georgian painter who posthumously rose to prominence. Relatively poor for most of his life, he worked a variety of ordinary jobs. His rustic, everyday scenes are celebrated today for their depiction of the Georgia of Pirosmani's lifetime, and he has become one of the country's most beloved artistic figures. Niko Pirosmani is alleged to be the inspiration for the male protagonist potrayed in the famous Russian song Million Roses.</p>
+		<button id="mybtn" onclick="myFunction()">Pause</button>
+	</div>
+	<script>
+// Get the video
+var video = document.getElementById("myVideo");
+
+// Get the button
+var btn = document.getElementById("myBtn");
+
+// Pause and play the video, and change the button text
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+</body>
+</html>
